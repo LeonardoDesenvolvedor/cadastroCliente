@@ -23,6 +23,7 @@ namespace Cadastro.Models
                             Telefone = "11422255566"
 
                         },
+
                          new Cliente()
                         {
                             Nome = " Marcelo Tas ",
@@ -31,9 +32,33 @@ namespace Cadastro.Models
 
                         },
 
+                            new Cliente()
+                        {
+                            Nome = " Amanda Soares",
+                            Emai = " astudodebom@gmail",
+                            Telefone = "745555666612"
+
+                        },
+
+                               new Cliente()
+                        {
+                            Nome = "Luciana Marques ",
+                            Emai = " lucianam@hotmal",
+                            Telefone = "15424546546"
+
+                        },
+
+                                  new Cliente()
+                        {
+                            Nome = "Elinton Casa",
+                            Emai = " elintoncasa@hotml",
+                            Telefone = "545645123"
+
+                        },
+
 
                     });
-                    contx.SaveChanges();
+                    
                 }
 
                 if (!contx.Enderecos.Any())
@@ -55,12 +80,39 @@ namespace Cadastro.Models
                               Bairro = "Alto Boa vista",
                               Cidade = " Sergipe",
                               Numero = "5464"
+                          },
+
+                              new Endereco()
+                          {
+                              Rua = "Araujo",
+                              Bairro = "Ameria",
+                              Cidade = "Reibeirão",
+                              Numero = "2222"
+                          },
+
+                                new Endereco()
+                          {
+                              Rua = "Teodore ",
+                              Bairro = "Boa vista",
+                              Cidade = "Roraima",
+                              Numero = "687"
+                          },
+
+                                  new Endereco()
+                          {
+                              Rua = "Amarelinha",
+                              Bairro = "Santa Catarina",
+                              Cidade = "Espirito Santo",
+                              Numero = "5324"
                           }
 
 
                         });
-                    contx.SaveChanges();
+                   
+
+
                 }
+                contx.SaveChanges();
             }
         }
 
